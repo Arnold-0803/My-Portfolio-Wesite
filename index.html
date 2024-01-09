@@ -40,25 +40,25 @@
                         dolore adipisci saepe eaque totam veniam accusantium quidem 
                         recusandae ex? Quis, vitae!</p>
                     <div class="titles">
-                        <p class="active">skills</p>
-                        <p>experience</p>
-                        <p>education</p>
+                        <p class="tab active" onclick="opentab('skills')">skills</p>
+                        <p class="tab" onclick="opentab('experience')">experience</p>
+                        <p class="tab" onclick="opentab('education')">education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Desining Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web App Development</li>
                             <li><span>App Development</span><br>Building Android/iOS App</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>2023</span><br>Enrolled in software training at PLPAfrica</li>
                             <li><span>2024-Present</span><br>E-commerce project(Agribusiness)</li>
                             <li><span>2024-Present</span><br>Building a weather App</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2023</span><br>Power Learn Project Organization</li>
                             <li><span>2014-2017</span><br>St. Patrick Secondary School</li>
@@ -69,6 +69,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let tabLinks = document.getElementsByClassName('tab');
+        let contents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tab){
+            for(tablink of tabLinks){
+                tablink.classList.remove('active');
+            }
+            for(content of contents){
+                content.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active');
+            document.getElementById(tab).classList.add('active-tab');
+        }
+    </script>
     
 </body>
 </html>
