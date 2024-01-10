@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Personal portfolio website</title>
+    <script src="https://kit.fontawesome.com/c9c2219343.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -13,11 +14,11 @@
             <nav>
                 <h2><strong>A</strong>rnold</h2>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -27,7 +28,7 @@
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -69,6 +70,80 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="contaner">
+            <h1>My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Distinctio, excepturi quos iusto sit, numquam omnis, neque 
+                        tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
+                        debitis mollitia? 
+                        Consequatur id fugiat nostrum?</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Distinctio, excepturi quos iusto sit, numquam omnis, neque 
+                        tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
+                        debitis mollitia? 
+                        Consequatur id fugiat nostrum?</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Distinctio, excepturi quos iusto sit, numquam omnis, neque 
+                        tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
+                        debitis mollitia? 
+                        Consequatur id fugiat nostrum?</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Screenshot (11).png" alt="">
+                    <div class="layer">
+                        <h3>Login/Signup interface</h3>
+                        <p>A friendly user interfaces that is designated to  
+                            give user a new spectactular experince like that one to the moon</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (12).png" alt="">
+                    <div class="layer">
+                        <h3>Weather Simple-App</h3>
+                        <p>A friendly user interfaces that is designated to  
+                            give user a new spectactular experince like that one to the moon</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (53).png" alt="">
+                    <div class="layer">
+                        <h3>A ebsite landing Page</h3>
+                        <p>A friendly user interfaces that is designated to  
+                            give user a new spectactular experince like that one to the moon</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
         </div>
     </div>
 
