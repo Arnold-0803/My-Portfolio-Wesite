@@ -1,214 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Personal portfolio website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<title>Personal portfolio website</title>
 </head>
 <body>
 
-    <div class="header">
-        <div class="container">
-            <nav>
-                <h2><strong>A</strong>rnold</h2>
-                <ul id="sidemenu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>UI/UX Desiner</p>
-                <h1>Hello, I'm <span>Arnold</span><br>Kiritu <h3>junior Front-end Developer</h3></h1>
-            </div>
-        </div>
-    </div>
+	<div class="header">
+		<div class="container">
+			<nav>
+				<h2><strong>A</strong>rnold</h2>
+				<ul id="sidemenu">
+					<li><a href="#home" class="active">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fas fa-times" onclick="closemenu()"></i>
+				</ul>
+				<i class="fas fa-bars" onclick="openmenu()"></i>
+			</nav>
+		</div>
+	</div>
 
-    <div class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/IMG-20220205-WA0001-removebg-preview.png" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1>About Me</h1>
-                    <p>I enrolled in software development training at Power
-                        Learn Project Africa organization and graduated as a junior
-                        front-end web developer, now my skill is more than  1+ years old
-                        in front-end development. I don't only
-                        possess strong creative skills and analytical thinking
-                        skills but I am as well a team player with an eye for details.</p>
-                    <div class="titles">
-                        <p class="tab active" onclick="opentab('skills')">skills</p>
-                        <p class="tab" onclick="opentab('experience')">experience</p>
-                        <p class="tab" onclick="opentab('education')">education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Desining Web/App interfaces.</li>
-                            <li><span>Web Development</span><br>Web App Development.</li>
-                            <li><span>App Development</span><br>Building Android/iOS App.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023</span><br>Enrolled in software training at PLPAfrica, where<br>
-                                I begun to grow knowledge and experince.</li>
-                            <li><span>2024-Present</span><br>Created E-commerce project(Agribusiness).</li>
-                            <li><span>2024-Present</span><br>Built a weather App.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br>Power Learn Project Organization.</li>
-                            <li><span>2014-2017</span><br>St. Patrick Secondary School.</li>
-                            <li><span>2007-2013</span><br>Huruma Prinary School.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="banner">
+		<div class="banner-text">
+			<p>Software Developer</p>
+			<h1>Hello, I'm <span>Arnold</span><br>Kiritu <h3>Frontend Software Developer</h3></h1>
+			<p>Welcome and thank you for your time and for visiting my profile, I'm exited to
+				share my details with you about my position in frontend development</p>
+		</div>
+		<div class="banner-image">
+			<img src="images/IMG_20220326_100216_045.jpg" alt="">
+		</div>
+	</div>
 
-    <div class="services" id="service">
-        <div class="container">
-            <h1>My Services</h1>
-            <div class="service-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Distinctio, excepturi quos iusto sit, numquam omnis, neque 
-                        tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
-                        debitis mollitia? 
-                        Consequatur id fugiat nostrum?</p>
-                    <a href="">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UX/UI Design</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Distinctio, excepturi quos iusto sit, numquam omnis, neque 
-                        tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
-                        debitis mollitia? 
-                        Consequatur id fugiat nostrum?</p>
-                    <a href="">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Distinctio, excepturi quos iusto sit, numquam omnis, neque 
-                        tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
-                        debitis mollitia? 
-                        Consequatur id fugiat nostrum?</p>
-                    <a href="">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+						<img src="images/IMG-20220205-WA0001-removebg-preview.png" alt="">
+				</div>
+				<div class="about-col-2">
+					<h1>About Me</h1>
+					<p>I am a tech ethusiast, who beleives in hardword, dedication, commitment
+						and team work.
+					</p>
+					<div class="titles">
+						<p class="tab active" onclick="opentab('skills')">skills</p>
+						<p class="tab" onclick="opentab('experience')">experience</p>
+						<p class="tab" onclick="opentab('education')">education</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>Mastery of:</span><br>Frontend Software Development</li>
+							<li><span>Proficient in:</span><br>Html, Css, JavaScript & framework such as React js.</li>
+							<li><span>Proficient in:</span><br>Github.</li>
+							<li><span>Competance:</span><br>
+								<ul>
+									<li>Problem solving</li>
+									<li>Quick learner</li>
+									<li>Excellent communicatoin</li>
+									<li>Creative</li>
+								</ul></li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>Jan 2021-Sep 2021-Volunter Experince</span><br>Health educator and sanitary trainer volunteer.
+								<br><br>Organized in a team of 7 to relocate to dozen households and schools. <br><br>
+								Received a certificate for this.</li>
+							<li><span>2023-Present</span><br>Food Basket Project. 
+								<br><br>wesite url: 
+								<a href="https://arnold-0803.github.io/Food-Basket-Project/">
+									https://arnold-0803.github.io/Food-Basket-Project/
+								</a> 
+								<br><br>GitHub link: 
+								<a href="https://github.com/Arnold-0803/Food-Basket-Project">
+									https://github.com/Arnold-0803/Food-Basket-Project
+								</a></li>
+							<li><span>2024-Present</span><br>Safri Tour Frontend Project. 
+								<br><br>GitHub link: 
+								<a href="https://github.com/Arnold-0803/custom-carz-project">
+									https://github.com/Arnold-0803/custom-carz-project
+								</a></li>
+							<li><span>2024-Present</span><br>Weather Application Project. 
+								<br><br>GitHub link: 
+								<a href="https://github.com/Arnold-0803/Weather-Application">
+									https://github.com/Arnold-0803/Weather-Application
+								</a></li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>Jan 2023-Jul 2023 Certificate of Software Development</span><br>Power Learn Project Organization.</li>
+							<li><span>2014-2017 Certificate of Secondary Education</span><br>St. Patrick Secondary School.</li>
+							<li><span>2007-2013 Certificate of Primary Education</span><br>Huruma Prinary School.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="portfolio" id="portfolio">
-        <div class="container">
-            <h1>My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/Screenshot (11).png" alt="">
-                    <div class="layer">
-                        <h3>Login/Signup interface</h3>
-                        <p>A friendly user interfaces that is designated to  
-                            give user a new spectactular experince like that one to the moon</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/Screenshot (12).png" alt="">
-                    <div class="layer">
-                        <h3>Weather Simple-App</h3>
-                        <p>A friendly user interfaces that is designated to  
-                            give user a new spectactular experince like that one to the moon</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/Screenshot (53).png" alt="">
-                    <div class="layer">
-                        <h3>A ebsite landing Page</h3>
-                        <p>A friendly user interfaces that is designated to  
-                            give user a new spectactular experince like that one to the moon</p>
-                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="" class="btn">See more</a>
-        </div>
-    </div>
+	<div class="services" id="service">
+		<div class="container">
+			<h1>My Services</h1>
+			<div class="service-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Web Design</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+						Distinctio, excepturi quos iusto sit, numquam omnis, neque 
+						tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
+						debitis mollitia? 
+						Consequatur id fugiat nostrum?</p>
+					<a href="">Learn more</a>
+				</div>
+				<div>
+					<i class="fa-solid fa-crop"></i>
+					<h2>UX/UI Design</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+						Distinctio, excepturi quos iusto sit, numquam omnis, neque 
+						tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
+						debitis mollitia? 
+						Consequatur id fugiat nostrum?</p>
+					<a href="">Learn more</a>
+				</div>
+				<div>
+					<i class="fa-brands fa-app-store"></i>
+					<h2>App Design</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+						Distinctio, excepturi quos iusto sit, numquam omnis, neque 
+						tenetur facere repudiandae suscipit aut cupiditate nisi fuga 
+						debitis mollitia? 
+						Consequatur id fugiat nostrum?</p>
+					<a href="">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1>Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> arnoldkells4@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +254714387538</p>
-                    <div class="social-media-icons">
-                        <a href=""><i class="fab fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><i class="fab fa-facebook "></i></a>
-                    </div>
-                    <a href="images/ArnoldKiritu CV Resume.pdf" download class="btn btn2">Download Cv</a>
-                </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="Use your email" required>
-                        <textarea name="message" rows="10" placeholder="Send feedback"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="portfolio" id="portfolio">
+		<div class="container">
+			<h1>My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="images/Screenshot (11).png" alt="">
+					<div class="layer">
+						<h3>Login/Signup interface</h3>
+						<p>A friendly user interfaces that is designated to  
+							give user a new spectactular experince like that one to the moon</p>
+						<a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="images/Screenshot (12).png" alt="">
+					<div class="layer">
+						<h3>Weather Simple-App</h3>
+						<p>A friendly user interfaces that is designated to  
+							give user a new spectactular experince like that one to the moon</p>
+						<a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="images/Screenshot (53).png" alt="">
+					<div class="layer">
+						<h3>A ebsite landing Page</h3>
+						<p>A friendly user interfaces that is designated to  
+							give user a new spectactular experince like that one to the moon</p>
+						<a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+			</div>
+			<a href="" class="btn">See more</a>
+		</div>
+	</div>
 
-    <div class="copyright">
-        <p>Copyright © Arnold_Kells, Allrights reserved</p>
-    </div>
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1>Contact Me</h1>
+					<p><i class="fas fa-paper-plane"></i> arnoldkells4@gmail.com</p>
+					<p><i class="fas fa-phone"></i> +254714387538</p>
+					<div class="social-media-icons">
+						<a href=""><i class="fab fa-linkedin"></i></a>
+						<a href=""><i class="fa-brands fa-x-twitter"></i></a>
+						<a href=""><i class="fab fa-instagram"></i></a>
+						<a href=""><i class="fab fa-facebook "></i></a>
+					</div>
+					<a href="images/Anold K. Njambi Frontend Software Development Resume.pdf" download class="btn btn2">Download Cv</a>
+				</div>
+				<div class="contact-right">
+					<form>
+						<input type="text" name="Name" placeholder="Your name" required>
+						<input type="email" name="email" placeholder="Use your email" required>
+						<textarea name="message" rows="10" placeholder="Send feedback"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script>
-        let tabLinks = document.getElementsByClassName('tab');
-        let contents = document.getElementsByClassName('tab-contents');
+	<div class="copyright">
+		<p>Copyright © Arnold_Kells, Allrights reserved</p>
+	</div>
 
-        function opentab(tab){
-            for(tablink of tabLinks){
-                tablink.classList.remove('active');
-            }
-            for(content of contents){
-                content.classList.remove('active-tab');
-            }
-            event.currentTarget.classList.add('active');
-            document.getElementById(tab).classList.add('active-tab');
-        }
-    </script>
+	<script>
+		let tabLinks = document.getElementsByClassName('tab');
+		let contents = document.getElementsByClassName('tab-contents');
 
-    <script>
-        let sidemenu = document.getElementById('sidemenu');
+		function opentab(tab){
+			for(tablink of tabLinks){
+				tablink.classList.remove('active');
+			}
+			for(content of contents){
+				content.classList.remove('active-tab');
+			}
+			event.currentTarget.classList.add('active');
+			document.getElementById(tab).classList.add('active-tab');
+		}
+	</script>
 
-        function openmenu(){
-            sidemenu.style.right = '0';
-        }
+	<script>
+		let sidemenu = document.getElementById('sidemenu');
 
-        function closemenu(){
-            sidemenu.style.right = '-200px';
-        }
+		function openmenu(){
+			sidemenu.style.right = '0';
+		}
 
-    </script>
+		function closemenu(){
+			sidemenu.style.right = '-200px';
+		}
+
+	</script>
     
     <!-- <script src="https://kit.fontawesome.com/c9c2219343.js" crossorigin="anonymous"></script> -->
 </body>
